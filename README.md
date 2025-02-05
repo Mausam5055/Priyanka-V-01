@@ -47,9 +47,9 @@ Ways to connect with Priyanka, including social media links and email contact de
 ## 🚀 Live Demo
 Experience Priyanka’s portfolio live:
 
-🌐 **Live Link:** _(Coming Soon)_
+🌐 **Live Link:** priyanka-v-01.vercel.app
 
-🔗 **Alternate Link:** _(Coming Soon)_
+🔗 **Alternate Link:** priyanka-v-01.vercel.app
 
 ---
 
@@ -67,10 +67,10 @@ Simply open the `index.html` file in your browser to view the portfolio.
 
 ---
 
-## 📬 Contact Priyanka
-Feel free to connect with Priyanka through these platforms:
+## 📬 Contact With Me
+Feel free to connect with Me through these platforms:
 
-🔹 **GitHub:** [github.com/Priyanka5055](https://github.com/Priyanka5055/)
+🔹 **GitHub:** https://github.com/Mausam5055/
 
 🔹 **LinkedIn:** _(Coming Soon)_
 
