@@ -18,11 +18,11 @@ function App() {
         <Navbar />
         <main>
           <Profile />
-          <Education />
-          <Journey />
-          <Testimonials />
           <About />
+          <Journey />
+          <Education />
           <Gallery />
+          <Testimonials />
           <Contact />
           <SocialMedia />
         </main>
