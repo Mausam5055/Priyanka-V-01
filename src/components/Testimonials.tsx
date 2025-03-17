@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Quote } from 'lucide-react';
 
 const testimonials = [
@@ -23,62 +23,71 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % testimonials.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
-
   return (
-    <section className="py-16 bg-white dark:bg-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <Quote className="w-12 h-12 mx-auto text-yellow-500 dark:text-blue-400 mb-4" />
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Testimonials</h2>
+    <section className="py-12 bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 relative overflow-hidden">
+      {/* Decorative Elements - Left Side */}
+      <div className="absolute left-0 top-0 h-full w-64 opacity-10 dark:opacity-5">
+        <div className="absolute top-1/4 left-8 w-16 h-16 rounded-full bg-yellow-500 dark:bg-blue-500 blur-xl" />
+        <div className="absolute top-1/2 left-12 w-24 h-24 rounded-full bg-yellow-400 dark:bg-blue-400 blur-xl" />
+        <div className="absolute bottom-1/4 left-6 w-20 h-20 rounded-full bg-yellow-600 dark:bg-blue-600 blur-xl" />
+      </div>
+
+      {/* Decorative Elements - Right Side */}
+      <div className="absolute right-0 top-0 h-full w-64 opacity-10 dark:opacity-5">
+        <div className="absolute top-1/3 right-12 w-20 h-20 rounded-full bg-yellow-500 dark:bg-blue-500 blur-xl" />
+        <div className="absolute top-2/3 right-8 w-16 h-16 rounded-full bg-yellow-400 dark:bg-blue-400 blur-xl" />
+        <div className="absolute bottom-1/4 right-16 w-24 h-24 rounded-full bg-yellow-600 dark:bg-blue-600 blur-xl" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="text-center mb-10">
+          <div className="relative inline-block">
+            <Quote className="w-10 h-10 mx-auto text-yellow-500 dark:text-blue-400 mb-3 transform -scale-x-100" />
+            <Quote className="w-10 h-10 mx-auto text-yellow-500/30 dark:text-blue-400/30 mb-3 absolute top-0 left-0 transform translate-x-0.5 translate-y-0.5" />
+          </div>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+            What People Say
+          </h2>
+          <p className="text-base text-gray-600 dark:text-gray-300">
+            Testimonials from colleagues and friends
+          </p>
         </div>
-        <div className="relative h-96 overflow-hidden">
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className={`absolute w-full transform transition-all duration-500 ${
-                index === currentIndex
-                  ? 'opacity-100 translate-x-0'
-                  : 'opacity-0 translate-x-full'
-              }`}
-              aria-live="polite"
+              className="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col"
             >
-              <div className="flex flex-col items-center">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-24 h-24 rounded-full mb-6 object-cover"
-                />
-                <blockquote className="text-xl italic text-gray-600 dark:text-gray-300 text-center max-w-2xl mb-4">
-                  "{testimonial.content}"
-                </blockquote>
-                <cite className="text-lg font-semibold text-gray-900 dark:text-white">
-                  {testimonial.name}
-                </cite>
-                <p className="text-yellow-600 dark:text-blue-400">{testimonial.role}</p>
+              <div className="p-6 flex flex-col items-center text-center">
+                <div className="relative mb-4">
+                  <div className="w-24 h-24 rounded-full overflow-hidden ring-3 ring-yellow-500/20 dark:ring-blue-500/20">
+                    <img
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="absolute -bottom-2 -right-2 bg-yellow-500 dark:bg-blue-500 rounded-full p-1.5 shadow-md">
+                    <Quote className="w-3 h-3 text-white" />
+                  </div>
+                </div>
+                
+                <div className="flex-1">
+                  <blockquote className="text-gray-600 dark:text-gray-300 text-base leading-relaxed mb-4">
+                    "{testimonial.content}"
+                  </blockquote>
+                  <div>
+                    <cite className="text-base font-bold text-gray-900 dark:text-white not-italic block">
+                      {testimonial.name}
+                    </cite>
+                    <span className="inline-block mt-1.5 px-3 py-0.5 rounded-full bg-yellow-100 dark:bg-blue-900 text-yellow-800 dark:text-blue-200 text-xs font-medium">
+                      {testimonial.role}
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
-          ))}
-        </div>
-        <div className="flex justify-center space-x-2 mt-8">
-          {testimonials.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-                index === currentIndex
-                  ? 'bg-yellow-500 dark:bg-blue-500'
-                  : 'bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500'
-              }`}
-              aria-label={`Go to testimonial ${index + 1}`}
-            />
           ))}
         </div>
       </div>
