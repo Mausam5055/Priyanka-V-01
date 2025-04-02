@@ -3,9 +3,6 @@
 <div align="center">
   <img src="preview.png" alt="Portfolio Preview" width="600px"/>
   
-  [![GitHub stars](https://img.shields.io/github/stars/Priyanka5055/Priyanka-Portfolio-V-01?style=for-the-badge)](https://github.com/Priyanka5055/Priyanka-Portfolio-V-01)
-  [![GitHub forks](https://img.shields.io/github/forks/Priyanka5055/Priyanka-Portfolio-V-01?style=for-the-badge)](https://github.com/Priyanka5055/Priyanka-Portfolio-V-01)
-  [![GitHub license](https://img.shields.io/github/license/Priyanka5055/Priyanka-Portfolio-V-01?style=for-the-badge)](LICENSE)
   [![Live Demo](https://img.shields.io/badge/Live%20Demo-Online-brightgreen?style=for-the-badge)](https://priyanka-v-01.vercel.app)
 </div>
 
