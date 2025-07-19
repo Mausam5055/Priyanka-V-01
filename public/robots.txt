@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://priyanka-v-01.vercel.app/sitemap.xml 
