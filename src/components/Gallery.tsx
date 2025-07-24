@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { Image, X } from 'lucide-react';
 
 const galleryImages = [
-  { src: "/assets/gallery1.jpg", alt: "Gallery Image 1", category: "Nature" },
-  { src: "/assets/gallery2.jpg", alt: "Gallery Image 2", category: "Architecture" },
-  { src: "/assets/gallery3.jpg", alt: "Gallery Image 3", category: "Nature" },
-  { src: "/assets/gallery4.jpg", alt: "Gallery Image 4", category: "Architecture" },
-  { src: "/assets/gallery5.jpg", alt: "Gallery Image 5", category: "Nature" },
-  { src: "/assets/gallery6.jpg", alt: "Gallery Image 6", category: "Architecture" }
+  { src: "/assets/gallery1.webp", alt: "Gallery Image 1", category: "Nature" },
+  { src: "/assets/gallery2.webp", alt: "Gallery Image 2", category: "Architecture" },
+  { src: "/assets/gallery3.webp", alt: "Gallery Image 3", category: "Nature" },
+  { src: "/assets/gallery4.webp", alt: "Gallery Image 4", category: "Architecture" },
+  { src: "/assets/gallery5.webp", alt: "Gallery Image 5", category: "Nature" },
+  { src: "/assets/gallery6.webp", alt: "Gallery Image 6", category: "Architecture" }
 ];
 
 export default function Gallery() {

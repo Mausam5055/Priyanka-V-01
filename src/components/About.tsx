@@ -69,14 +69,14 @@ export default function About() {
           <div className="grid grid-cols-2 gap-6">
             <div className="transform hover:scale-105 transition-transform duration-300 group">
               <img
-                src="/assets/about1.jpg"
+                src="/assets/priyanka1.webp"
                 alt="About Me 1"
                 className="rounded-xl shadow-lg group-hover:shadow-xl"
               />
             </div>
             <div className="transform hover:scale-105 transition-transform duration-300 mt-8 group">
               <img
-                src="/assets/about2.jpg"
+                src="/assets/priyanka2.webp"
                 alt="About Me 2"
                 className="rounded-xl shadow-lg group-hover:shadow-xl"
               />

@@ -28,7 +28,7 @@ export default function Profile() {
           <div className="relative w-48 h-48 mb-8 group">
             <div className="absolute inset-0 rounded-full bg-yellow-200 dark:bg-blue-500 animate-pulse"></div>
             <img
-              src="/assets/profile.jpg"
+              src="/assets/profile.webp"
               alt="Priyanka Nath Mazumdar"
               className="relative w-full h-full object-cover rounded-full border-4 border-yellow-400 dark:border-blue-400 transition-transform duration-300 group-hover:scale-105"
             />

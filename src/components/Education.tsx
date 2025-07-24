@@ -7,21 +7,21 @@ const educationData = [
     institute: "Primerose English Medium High School, Lala",
     description: "Primary Education (class kg-1 to class 10)",
     year: "2006-2020",
-    image: "/assets/education1.jpg",
+    image: "/assets/education1.webp",
     achievements: ["Academic Excellence Award", "Perfect Attendance"]
   },
   {
     institute: "Ramanuj Gupta Senior Secondary School, Silchar",
     description: "Higher Secondary Education ",
     year: "2020-2022",
-    image: "/assets/education2.jpg",
+    image: "/assets/education2.webp",
     achievements: ["Science Club President", "Mathematics Olympiad Participant"]
   },
   {
     institute: "Assam Down Town University, Guahati",
     description: "Bsc In Biotechnology",
     year: "2022-2026",
-    image: "/assets/education3.jpg",
+    image: "/assets/education3.webp",
     achievements: ["Dean's List", "Research Assistant"]
   }
 ];
