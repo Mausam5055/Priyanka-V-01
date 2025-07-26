@@ -45,13 +45,9 @@ export default function Profile() {
 
           {/* Bio */}
           <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-2xl mb-8 relative z-10">
-            Enthusiastic B.Sc. Biotechnology student with a solid foundation in lab
-            research, molecular biology, and microbial techniques. Skilled in using lab
-            equipment like PCR machines, centrifuges, and spectrophotometers, with
-            expertise in DNA extraction and gel electrophoresis. Strong communicator
-            and team player, with a passion for painting and reading novels that enhance
-            creativity and critical thinking. Eager to contribute to research and grow in
-            the biotechnology field.
+            B.Sc. Biotechnology student with expertise in molecular biology, lab research, and microbial techniques. 
+            Skilled in PCR, DNA extraction, and gel electrophoresis. Passionate about research with interests in 
+            painting and literature that enhance creativity and critical thinking.
           </p>
 
           {/* Social Links */}

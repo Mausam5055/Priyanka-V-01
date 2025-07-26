@@ -56,12 +56,12 @@ export default function About() {
             <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
                 <Code className="w-6 h-6 mr-2 text-yellow-500 dark:text-blue-400" />
-                Tech Journey
+                Biotechnology Journey
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Self-taught in both front-end and back-end development, I've cultivated my skills through
-                dedication and online resources. My curiosity-driven approach has helped me build a strong
-                foundation in coding, which I continuously enhance through new challenges and projects.
+                Passionate about biotechnology with hands-on experience in molecular biology and lab research. 
+                My dedication to learning has helped me master essential techniques like DNA extraction and 
+                gel electrophoresis, preparing me for future contributions to the field.
               </p>
             </div>
           </div>
