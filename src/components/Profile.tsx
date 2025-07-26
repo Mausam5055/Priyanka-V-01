@@ -61,7 +61,7 @@ export default function Profile() {
               <FaGithub className="w-7 h-7" />
             </a>
             <a
-              href="https://linkedin.com/in/YourLinkedIn"
+              href="https://www.linkedin.com/in/priyanka-nath-mazumdar-977b93223/?trk=people-guest_people_search-card&originalSubdomain=in"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-secondary-400 hover:bg-white dark:hover:bg-gray-800 transition-all duration-300 hover:scale-110 shadow-soft hover:shadow-medium"
