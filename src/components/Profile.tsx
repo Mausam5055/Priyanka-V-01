@@ -6,25 +6,18 @@ export default function Profile() {
     <section className="relative pt-28 pb-20 bg-gradient-to-br from-primary-50/90 via-white to-white dark:from-gray-900 dark:via-gray-900/95 dark:to-gray-800 overflow-hidden">
       {/* Minimal Animated Shapes */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Subtle Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-tr from-primary-100/5 to-transparent dark:from-secondary-500/5 dark:to-transparent"></div>
-        
-        {/* Large soft circles */}
         <div className="absolute -right-32 -top-32 w-96 h-96 rounded-full bg-gradient-to-b from-primary-100/20 to-transparent dark:from-secondary-400/10 dark:to-transparent animate-float-slow blur-lg"></div>
         <div className="absolute -left-24 top-1/3 w-80 h-80 rounded-full bg-gradient-to-tr from-primary-200/10 to-transparent dark:from-secondary-300/5 dark:to-transparent animate-float-reverse blur-lg"></div>
-        
-        {/* Minimal decorative elements */}
         <div className="absolute right-1/4 top-1/4 w-64 h-64 rounded-full bg-gradient-to-tr from-primary-100/10 to-transparent dark:from-secondary-400/5 dark:to-transparent animate-float blur-xl"></div>
         <div className="absolute left-1/3 bottom-1/4 w-48 h-48 rounded-full bg-gradient-to-br from-primary-50/20 to-transparent dark:from-secondary-300/10 dark:to-transparent animate-float-reverse blur-xl"></div>
-        
-        {/* Subtle light beams */}
         <div className="absolute left-1/4 top-1/2 w-48 h-0.5 bg-gradient-to-r from-primary-200/20 to-transparent dark:from-secondary-300/10 rotate-45 animate-pulse"></div>
         <div className="absolute right-1/4 bottom-1/3 w-48 h-0.5 bg-gradient-to-l from-primary-200/20 to-transparent dark:from-secondary-300/10 -rotate-45 animate-pulse"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex flex-col items-center animate-fade-in-up">
-          {/* Profile Image with Animation */}
+          {/* Profile Image */}
           <div className="relative w-56 h-56 mb-10 group">
             <div className="absolute inset-0 rounded-full bg-primary-200 dark:bg-secondary-500 animate-pulse"></div>
             <img
@@ -96,11 +89,17 @@ export default function Profile() {
             </div>
           </div>
 
-          {/* CTA Button */}
-          <button className="flex items-center px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 dark:from-secondary-600 dark:to-secondary-700 text-white font-poppins font-semibold rounded-2xl hover:from-primary-600 hover:to-primary-700 dark:hover:from-secondary-700 dark:hover:to-secondary-800 transition-all duration-300 shadow-large hover:shadow-xl hover:scale-105 relative z-10 animate-scale-in" style={{ animationDelay: '1s' }}>
+          {/* CTA Button with Google Drive Link */}
+          <a
+            href="https://drive.google.com/file/d/1xyenY_4pr_zIkuA0RCjUxvAlM90QlJOn/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 dark:from-secondary-600 dark:to-secondary-700 text-white font-poppins font-semibold rounded-2xl hover:from-primary-600 hover:to-primary-700 dark:hover:from-secondary-700 dark:hover:to-secondary-800 transition-all duration-300 shadow-large hover:shadow-xl hover:scale-105 relative z-10 animate-scale-in"
+            style={{ animationDelay: '1s' }}
+          >
             <FaDownload className="mr-3 text-lg" />
             <span className="text-lg">Download Resume</span>
-          </button>
+          </a>
         </div>
       </div>
     </section>
