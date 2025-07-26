@@ -40,14 +40,18 @@ export default function Profile() {
             Priyanka Nath Mazumdar
           </h1>
           <h2 className="text-xl font-medium text-yellow-600 dark:text-blue-400 text-center mb-6">
-            Full Stack Developer
+            B.Sc. Biotechnology Student
           </h2>
 
           {/* Bio */}
           <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-2xl mb-8 relative z-10">
-            A passionate Full Stack Developer with expertise in building modern web applications.
-            I specialize in React, Node.js, and cloud technologies, creating scalable and user-friendly solutions
-            that make a difference.
+            Enthusiastic B.Sc. Biotechnology student with a solid foundation in lab
+            research, molecular biology, and microbial techniques. Skilled in using lab
+            equipment like PCR machines, centrifuges, and spectrophotometers, with
+            expertise in DNA extraction and gel electrophoresis. Strong communicator
+            and team player, with a passion for painting and reading novels that enhance
+            creativity and critical thinking. Eager to contribute to research and grow in
+            the biotechnology field.
           </p>
 
           {/* Social Links */}
