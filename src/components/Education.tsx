@@ -49,17 +49,19 @@ const itemVariants = {
 
 export default function Education() {
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-yellow-50 dark:from-gray-800 dark:to-gray-900">
+    <section className="py-32 bg-gradient-to-b from-white to-primary-50/30 dark:from-gray-800 dark:to-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-24"
         >
-          <GraduationCap className="w-16 h-16 mx-auto text-yellow-500 dark:text-blue-400 mb-4" />
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Educational Journey</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-primary-100 to-primary-200 dark:from-secondary-800 dark:to-secondary-900 rounded-3xl mb-8 shadow-large">
+            <GraduationCap className="w-12 h-12 text-primary-600 dark:text-secondary-400" />
+          </div>
+          <h2 className="text-5xl font-playfair font-bold text-gray-900 dark:text-white mb-6 text-shadow">Educational Journey</h2>
+          <p className="text-xl font-inter text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Exploring the path of knowledge and growth through academic excellence
           </p>
         </motion.div>
@@ -68,39 +70,46 @@ export default function Education() {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-3 gap-10"
         >
           {educationData.map((edu, index) => (
             <motion.div
               key={index}
               variants={itemVariants}
-              className="bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-large hover:shadow-xl transform hover:scale-105 transition-all duration-500 border border-gray-100 dark:border-gray-700"
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-56 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
                 <img
                   src={edu.image}
                   alt={edu.institute}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+              <div className="p-8">
+                <h3 className="text-2xl font-playfair font-bold text-gray-900 dark:text-white mb-4 leading-tight">
                   {edu.institute}
                 </h3>
-                <div className="flex items-center text-yellow-600 dark:text-blue-400 mb-3">
-                  <Calendar className="w-4 h-4 mr-2" />
-                  <p className="text-sm">{edu.year}</p>
+                <div className="flex items-center text-primary-600 dark:text-secondary-400 mb-4">
+                  <div className="w-8 h-8 bg-primary-100 dark:bg-secondary-900 rounded-lg flex items-center justify-center mr-3">
+                    <Calendar className="w-4 h-4" />
+                  </div>
+                  <p className="font-poppins font-medium">{edu.year}</p>
                 </div>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">{edu.description}</p>
-                <div className="space-y-2">
-                  <p className="font-semibold text-gray-900 dark:text-white flex items-center">
-                    <Award className="w-4 h-4 mr-2 text-yellow-500 dark:text-blue-400" />
+                <p className="text-gray-600 dark:text-gray-300 mb-6 font-inter leading-relaxed">{edu.description}</p>
+                <div className="space-y-3">
+                  <p className="font-poppins font-semibold text-gray-900 dark:text-white flex items-center">
+                    <div className="w-8 h-8 bg-primary-100 dark:bg-secondary-900 rounded-lg flex items-center justify-center mr-3">
+                      <Award className="w-4 h-4 text-primary-600 dark:text-secondary-400" />
+                    </div>
                     Achievements
                   </p>
-                  <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-300">
+                  <ul className="space-y-2 ml-11">
                     {edu.achievements.map((achievement, i) => (
-                      <li key={i}>{achievement}</li>
+                      <li key={i} className="text-gray-600 dark:text-gray-300 font-inter flex items-center">
+                        <div className="w-2 h-2 bg-primary-400 dark:bg-secondary-400 rounded-full mr-3 flex-shrink-0"></div>
+                        {achievement}
+                      </li>
                     ))}
                   </ul>
                 </div>
